@@ -3,14 +3,10 @@
   <head>
     <title>Sushant Kumar | Portfolio</title>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
       .card {
         background-color: #1f1f2e;
@@ -27,16 +23,6 @@
       .card h3 {
         margin-top: 0;
         color: #4fd1c5;
-      }
-      .profile-img {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 4px solid #4fd1c5;
-        margin: 20px auto;
-        display: block;
-        animation: fadeIn 1s ease-in-out;
       }
       .skills-grid {
         display: flex;
@@ -72,11 +58,6 @@
           transform: scale(1);
         }
       }
-      .download-btn-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-      }
       .contact-form {
         display: grid;
         gap: 1rem;
@@ -98,245 +79,137 @@
       }
       .contact-icons {
         display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        font-size: 0.95rem;
+        gap: 20px;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
       }
-      .header-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 40px 20px;
-  gap: 20px;
-}
-
-/* @media (max-width: 768px) {
-  .header-flex {
-    flex-direction: column;
-    text-align: center;
-  }
-  .content ul {
-    justify-content: center;
-  } */
-
-  @media (max-width: 768px) {
-  .header-flex {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-
-  .content ul {
-    justify-content: center;
-  }
-
-  .profile-img {
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
-}
-
-.headerContainer{
-  display: flex;
-  flex-direction: row;
-  /* gap: 50px; */
-  padding: 100px;
-}
-.aboutMe{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: start;
-  color: white;
-  
-}
-.aboutMe h3{
-  color:white;
-}
-.profileImg {
-  width: 450px;        /* or any equal width & height */
-  height: 450px;
-  border-radius: 50%;
-  /* object-fit: cover;   ensures the image doesn't stretch */
-}
-.sushantName{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 43px;
-  font-weight: 600;
-  color: white;
-
-}
-.sushantEdu{
-  font-size: 25px;
-  font-weight: 200;
-  color: white;
-}
-
-.headerContainer{
-			/* color: #4696e5; */
-   background-color:#49c7ea;
-}
-.leftContent{
-  /* background-color: black; */
-  padding: 30px;
-}
-.viewProject{
-  background-color: rgb(7, 173, 251);
-}
-@media (max-width:768px) {
-.headerContainer{
-  display: flex;
-  flex-direction: column-reverse;
-}
-.profileImg {
-  
-  margin-left: 45px;
-  /* object-fit: cover;   ensures the image doesn't stretch */
-}
-}
-@media (max-width:480px) {
-  .profileImg {
-  width: 250px;        /* or any equal width & height */
-  height: 250px;
-  border-radius: 50%;
-  margin-left: 35px;
-  /* object-fit: cover;   ensures the image doesn't stretch */
-}
-.leftContent{
-  /* background-color: black; */
-  padding: 0px;
-}
-.headerContainer{
-  
-  padding: 50px;
-}
-}
+      .contact-icons a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      .contact-icons a:hover {
+        color: #4fd1c5;
+      }
+      .headerContainer {
+        display: flex;
+        flex-direction: row;
+        padding: 100px;
+        background-color: #49c7ea;
+      }
+      .aboutMe {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        color: white;
+      }
+      .profileImg {
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+      }
+      .sushantName {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 43px;
+        font-weight: 600;
+        color: white;
+      }
+      .sushantEdu {
+        font-size: 25px;
+        font-weight: 200;
+        color: white;
+      }
+      .leftContent {
+        padding: 30px;
+      }
+      @media (max-width: 768px) {
+        .headerContainer {
+          flex-direction: column-reverse;
+          padding: 50px;
+        }
+        .profileImg {
+          width: 250px;
+          height: 250px;
+          margin-left: 10px;
+        }
+        .leftContent {
+          padding: 0px;
+        }
+      }
     </style>
   </head>
   <body class="is-preload">
     <!-- Header -->
-    <!-- <header id="header">
-              <div class="header-flex">
-                            <div class="content">
-                              <h1><a href="#intro">Sushant Kumar</a></h1>
-                              <p>B.Tech IT | Java Developer</p>
-                              <ul class="actions">
-                                <li>
-                                  <a href="assets/sushan.pdf" download class="button primary icon solid fa-download">
-                                    Download Resume
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#projects" class="button icon solid fa-chevron-down scrolly">
-                                    View Projects
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                            <img src="images/sushant.jfif" alt="Sushant Kumar" class="profile-img" />
-                          </div>
-    </header> -->
     <header class="header">
       <div class="headerContainer">
-                    <div class="leftContent">
-                      <h1 class="sushantName"><a href="#intro">Sushant Kumar</a></h1>
-                      <p class="sushantEdu">B.Tech IT | Java Developer</p>
-                      <div class="aboutMe">
-                        <h3>About me :</h3>
-                         <p>A passionate Frontend Developer with a focus on clean UI, responsive design, and smooth user experiences. Skilled in HTML, CSS, JavaScript, and React, and always eager to build beautiful and user-friendly web interfaces. A creative problem-solver and a UI enthusiast who enjoys turning ideas into functional and engaging websites.</p>
-                      </div>
-                      <ul class="actions">
-                        <li>
-                          <a href="assets/sushan.pdf" download class="button primary icon solid fa-download">
-                            Download Resume
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#projects" class="button primary icon solid fa-chevron-down scrolly">
-                            View Projects
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="rightContainer">
-                      <img src="images/sushant.jfif" alt="Sushant Kumar" class="profileImg" />
-                    </div>
-                    
-                  </div>
-</header>
+        <div class="leftContent">
+          <h1 class="sushantName"><a href="#intro">Sushant Kumar</a></h1>
+          <p class="sushantEdu">B.Tech IT | Java Developer</p>
+          <div class="aboutMe">
+            <h3>About me :</h3>
+            <p>A passionate Frontend Developer with a focus on clean UI, responsive design, and smooth user experiences. Skilled in HTML, CSS, JavaScript, and React, and always eager to build beautiful and user-friendly web interfaces.</p>
+          </div>
+          <ul class="actions">
+            <li>
+              <a href="assets/sushan.pdf" download class="button primary icon solid fa-download">Download Resume</a>
+            </li>
+            <li>
+              <a href="#projects" class="button primary icon solid fa-chevron-down scrolly">View Projects</a>
+            </li>
+          </ul>
+        </div>
+        <div class="rightContainer">
+          <img src="images/sushant.jfif" alt="Sushant Kumar" class="profileImg" />
+        </div>
+      </div>
+    </header>
 
     <!-- Main Sections -->
     <div id="wrapper">
-              <section id="education" class="wrapper style2 fade-up">
-                            <div class="inner">
-                              <h2>Education</h2>
-                              <div class="card">
-                                <h3>B.Tech in Information Technology</h3>
-                                <p>Muzaffarpur Institute of Technology (2021 – 2025)</p>
-                                <p>CGPA - 7.24 </p>
-                              </div>
-                              <div class="card">
-                                <h3>12th – St. Xavier's School, Muzaffarpur</h3>
-                                <p>CBSE Board – 65% | Year: 2021</p>
-                              </div>
-                              <div class="card">
-                                <h3>10th – DAV Public School, Malighat, Muzaffarpur</h3>
-                                <p>CBSE Board – 95% | Year: 2019</p>
-                              </div>
-                            </div>
-                          </section>
-                          
+      <section id="education" class="wrapper style2 fade-up">
+        <div class="inner">
+          <h2>Education</h2>
+          <div class="card">
+            <h3>B.Tech in Information Technology</h3>
+            <p>Muzaffarpur Institute of Technology (2021 – 2025)</p>
+            <p>CGPA - 7.24</p>
+          </div>
+          <div class="card">
+            <h3>12th – St. Xavier's School, Muzaffarpur</h3>
+            <p>CBSE Board – 65% | Year: 2021</p>
+          </div>
+          <div class="card">
+            <h3>10th – DAV Public School, Malighat, Muzaffarpur</h3>
+            <p>CBSE Board – 95% | Year: 2019</p>
+          </div>
+        </div>
+      </section>
 
       <section id="skills" class="wrapper style3 fade-up">
-              <div class="inner">
-                <h2>Skills</h2>
-                <div class="skills-grid">
-                  <div class="skill-icon">
-                    <img src="images/html.jfif" alt="html" />
-                    <span>html</span>
-                  </div>
-                  <div class="skill-icon">
-                    <img src="images/c++.png" alt="c++" />
-                    <span>c++</span>
-                  </div>
-                  <div class="skill-icon">
-                    <img src="images/github.jfif" alt="Git" />
-                    <span>Git</span>
-                  </div>
-                  <div class="skill-icon">
-                    <img src="images/java.png "alt="java" />
-                    <span>Java</span>
-                  </div>
-                  <div class="skill-icon">
-                    <img src="images/css.png" alt="css" />
-                    <span></span>CSS</span>
-                  </div>
-                  <div class="skill-icon">
-                    <img src="images/js.png" alt="Networks" />
-                    <span>js</span>
-                  </div>
-                </div>
-              </div>
-            </section>
+        <div class="inner">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-icon"><img src="images/html.jfif" alt="html" /><span>HTML</span></div>
+            <div class="skill-icon"><img src="images/c++.png" alt="c++" /><span>C++</span></div>
+            <div class="skill-icon"><img src="images/github.jfif" alt="Git" /><span>Git</span></div>
+            <div class="skill-icon"><img src="images/java.png" alt="Java" /><span>Java</span></div>
+            <div class="skill-icon"><img src="images/css.png" alt="CSS" /><span>CSS</span></div>
+            <div class="skill-icon"><img src="images/js.png" alt="JS" /><span>JavaScript</span></div>
+          </div>
+        </div>
+      </section>
 
       <section id="projects" class="wrapper style2 fade-up">
         <div class="inner">
           <h2>Projects</h2>
           <div class="card">
             <h3>Hostel Management System</h3>
-            <p>
-              Collaborated in a team to develop a web-based application aimed at
-              streamlining hostel operations and improving student convenience.
-              Features include room allotment, student record management,
-              complaint tracking, and notice sharing.
-            </p>
+            <p>Collaborated in a team to develop a web-based application aimed at streamlining hostel operations and improving student convenience.</p>
           </div>
           <div class="card">
             <h3>Timetable Management System</h3>
-            <p>
-              Built a system to assign subjects and teachers to time slots with
-              conflict prevention logic for classroom and faculty allocation.
-            </p>
+            <p>Built a system to assign subjects and teachers to time slots with conflict prevention logic for classroom and faculty allocation.</p>
           </div>
         </div>
       </section>
@@ -352,30 +225,21 @@
       </section>
 
       <section id="contact" class="wrapper style1 fade-up">
-              <div class="inner">
-                <h2>Contact</h2>
-                <div class="contact-icons">
-                  <p>
-                    <strong><i class="fas fa-envelope"></i> Email:</strong> sushantkumar2285@gmail.com
-                    <a href="mailto:sushantkumar2258@gmail.com"></a>
-                  </p>
-                  <p>
-                    <strong><i class="fas fa-phone"></i> Phone:</strong> +91 6299695879
-                  </p>
-                  <p>
-                    <strong><i class="fab fa-linkedin"></i> LinkedIn:</strong> www.linkedin.com/in/sushant2285
-                    <a href="https://linkedin.com/in/sushant2285"></a>
-                  </p>
-                </div>
-                <form class="contact-form" method="post" action="#">
-                  <input type="text" name="name" placeholder="Your Name" required />
-                  <input type="email" name="email" placeholder="Your Email" required />
-                  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                  <button type="submit" class="button primary">Send Message</button>
-                </form>
-              </div>
-            </section>
-            
+        <div class="inner">
+          <h2>Contact</h2>
+          <div class="contact-icons">
+            <a href="mailto:sushantkumar2285@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+916299695879" title="Phone"><i class="fas fa-phone"></i></a>
+            <a href="https://linkedin.com/in/sushant2285" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <form class="contact-form" method="post" action="#">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="button primary">Send Message</button>
+          </form>
+        </div>
+      </section>
     </div>
 
     <!-- Footer -->
@@ -383,7 +247,7 @@
       <div class="inner">
         <ul class="menu">
           <li>&copy; Sushant Kumar. All rights reserved.</li>
-        
+        </ul>
       </div>
     </footer>
 
